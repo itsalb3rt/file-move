@@ -3,7 +3,7 @@
  * __construct
  *      $inputName: Nombre del indice del array $_FILES
  *      $dirToSave: Directorio donde se quiere guardar el archivo ej: 'files/', 'images/', 'reports/'
-*/
+ */
 class FileMove{
     private $name;
     private $extension;
@@ -102,10 +102,14 @@ class FileMove{
     //Private methods
 
     private function move(){
+        $this->createDirIsNotExists();
+        move_uploaded_file($_FILES[$this->inputFileName]['tmp_name'],
+            $this->dirToSave . $this->name . '.' . $this->extension);
+    }
+
+    private function createDirIsNotExists(){
         if ( !file_exists( $this->dirToSave ) ) {
             mkdir( $this->dirToSave , 0777, true );
         }
-        move_uploaded_file($_FILES[$this->inputFileName]['tmp_name'],
-            $this->dirToSave . $this->name . '.' . $this->extension);
     }
 }
