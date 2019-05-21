@@ -10,7 +10,7 @@ class FileMove{
     private $dirToSave;
     private $inputFileName;
 
-    function __construct($inputName,$dirToSave){
+    function __construct(String $inputName,String $dirToSave){
         $this->name = $_FILES[$inputName]['name'];
         $this->extension = $this->getExtensionFromName();
         $this->inputFileName = $inputName;
@@ -88,7 +88,7 @@ class FileMove{
         return $ext;
     }
 
-    public function save(){
+    public function save():void{
         $this->move();
     }
 
@@ -101,13 +101,13 @@ class FileMove{
 
     //Private methods
 
-    private function move(){
+    private function move():void{
         $this->createDirIsNotExists();
         move_uploaded_file($_FILES[$this->inputFileName]['tmp_name'],
             $this->dirToSave . $this->name . '.' . $this->extension);
     }
 
-    private function createDirIsNotExists(){
+    private function createDirIsNotExists():void{
         if ( !file_exists( $this->dirToSave ) ) {
             mkdir( $this->dirToSave , 0777, true );
         }
