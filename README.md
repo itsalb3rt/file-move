@@ -4,8 +4,9 @@ Pequeña clase para mover archivos enviados al servidor mediante formularios o A
 Uso basico;
 
 El constructor recibe 2 parámetros iniciales
-1 – nombre del índice donde se encuentra el archivo dentro de **$_FILES**
-2 – Directorio donde se desea guardar el archivo
+
+1. Nombre del índice donde se encuentra el archivo dentro de **$_FILES**
+2. Directorio donde se desea guardar el archivo
 
 
 ```php
