@@ -1,17 +1,19 @@
 <?php
+
+namespace Ligne;
 /**
  * __construct
- *      $inputName: Nombre del indice del array $_FILES
- *      $dirToSave: Directorio donde se quiere guardar el archivo ej: 'files/', 'images/', 'reports/'
+ *      $inputName: Index of $_FILES array
+ *      $dirToSave: Dir to save file Example: 'files/', 'images/', 'reports/' (THE FINAL SLASH IS REQUIRED)
  */
 class FileMove{
-    private $name;
+    private $fileName;
     private $extension;
     private $dirToSave;
     private $inputFileName;
 
     function __construct(String $inputName,String $dirToSave){
-        $this->name = $_FILES[$inputName]['name'];
+        $this->fileName = $_FILES[$inputName]['name'];
         $this->extension = $this->getExtensionFromName();
         $this->inputFileName = $inputName;
         $this->dirToSave = $dirToSave;
@@ -20,17 +22,17 @@ class FileMove{
     /**
      * @return mixed
      */
-    public function getName()
+    public function getFileName()
     {
-        return $this->name;
+        return $this->fileName;
     }
 
     /**
-     * @param mixed $name
+     * @param mixed $fileName
      */
-    public function setName($name): void
+    public function setFileName($fileName): void
     {
-        $this->name = $name;
+        $this->fileName = $fileName;
     }
 
     /**
@@ -81,32 +83,39 @@ class FileMove{
         $this->inputFileName = $inputFileName;
     }
 
-    //Util
+
     public function getExtensionFromName(){
-        $path = $this->name;
+        $path = $this->fileName;
         $ext = pathinfo($path, PATHINFO_EXTENSION);
         return $ext;
     }
 
+    /**
+     * Move file to specific dir
+     */
     public function save():void{
         $this->move();
     }
 
     public function debugData(){
-        var_dump('File name: ' . $this->name);
+        var_dump('File name: ' . $this->fileName);
         var_dump('File extension: ' .$this->extension);
         var_dump('Directory to save: ' .$this->dirToSave);
         var_dump('Input name: ' .$this->inputFileName);
     }
 
-    //Private methods
-
+    /**
+     * Move the file to specific dir
+     */
     private function move():void{
         $this->createDirIsNotExists();
         move_uploaded_file($_FILES[$this->inputFileName]['tmp_name'],
-            $this->dirToSave . $this->name . '.' . $this->extension);
+            $this->dirToSave . $this->fileName . '.' . $this->extension);
     }
 
+    /**
+     * If the specific dir not exists, this method created this dir
+     */
     private function createDirIsNotExists():void{
         if ( !file_exists( $this->dirToSave ) ) {
             mkdir( $this->dirToSave , 0777, true );

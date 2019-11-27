@@ -1,0 +1,24 @@
+{
+  "name": "ligne/file-move",
+  "type": "library",
+  "description": "Simple file move",
+  "keywords": ["file","move"],
+  "homepage": "https://github.com/lignedev/error-handler",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Albert Eduardo Hidalgo Taveras",
+      "email": "itsalb3rt@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ligne\\": "src"
+    }
+  },
+  "minimum-stability": "dev"
+}
