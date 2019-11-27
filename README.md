@@ -2,6 +2,10 @@
 A simple class to move file most easy.
 
 ## Use
+```bash
+$ composer require ligne/file-move
+```
+
 
 ```php
 use Ligne\FileMove;
