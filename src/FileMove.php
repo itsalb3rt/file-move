@@ -97,6 +97,9 @@ class FileMove{
         $this->move();
     }
 
+    /**
+     * Return all properties of the class for see data
+     */
     public function debugData(){
         var_dump('File name: ' . $this->fileName);
         var_dump('File extension: ' .$this->extension);

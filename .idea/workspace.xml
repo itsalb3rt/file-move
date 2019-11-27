@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fcdb12e-6bfc-4ff0-96df-4e711dad425c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/1558405360.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/1558444114.ods" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileMove.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileMove.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1558403393255</updated>
       <workItem from="1558403394639" duration="7451000" />
-      <workItem from="1574884374167" duration="2495000" />
+      <workItem from="1574884374167" duration="2924000" />
     </task>
     <servers />
   </component>

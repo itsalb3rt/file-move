@@ -4,7 +4,7 @@ A simple class to move file most easy.
 ## Use
 
 ```php
-require 'src/FileMove.php';
+use Ligne\FileMove;
 
 $file = new FileMove("myfile","files/"); //The final slash is required
 $file->save();
@@ -13,3 +13,12 @@ $file->save();
 
 ## Other methods
 
+```php
+$file->setFileName();
+$file->debugData();
+$file->getDirToSave();
+$file->getExtension();
+$file->getExtensionFromName();
+$file->getFileName();
+$file->getInputFileName();
+```
