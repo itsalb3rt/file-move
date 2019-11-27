@@ -3,7 +3,7 @@
   "type": "library",
   "description": "Simple file move",
   "keywords": ["file","move"],
-  "homepage": "https://github.com/lignedev/error-handler",
+  "homepage": "https://github.com/itsalb3rt/file-move",
   "license": "MIT",
   "authors": [
     {

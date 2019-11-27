@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9fcdb12e-6bfc-4ff0-96df-4e711dad425c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileMove.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileMove.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1558403393255</updated>
       <workItem from="1558403394639" duration="7451000" />
-      <workItem from="1574884374167" duration="2924000" />
+      <workItem from="1574884374167" duration="3023000" />
     </task>
     <servers />
   </component>
