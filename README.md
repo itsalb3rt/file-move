@@ -19,6 +19,12 @@ $file->save();
 
 ```php
 $file->setFileName();
+/** 
+* The mime type of the file, if the browser provided this information. 
+* An example would be "image/gif". 
+* This mime type is however not checked on the PHP side and therefore don't take its value for granted.
+ */
+$file->getFileType(); 
 $file->debugData();
 $file->getDirToSave();
 $file->getExtension();

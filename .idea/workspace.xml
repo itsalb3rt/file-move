@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fcdb12e-6bfc-4ff0-96df-4e711dad425c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/ligne_file_move.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ligne_file_move.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileMove.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileMove.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,12 +16,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1UDHiMc8J4VTOER1isOWATo4tmX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,7 +67,8 @@
       <option name="presentableId" value="Default" />
       <updated>1558403393255</updated>
       <workItem from="1558403394639" duration="7451000" />
-      <workItem from="1574884374167" duration="3023000" />
+      <workItem from="1574884374167" duration="4153000" />
+      <workItem from="1574890636045" duration="502000" />
     </task>
     <servers />
   </component>
@@ -69,7 +80,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

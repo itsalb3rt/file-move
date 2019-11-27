@@ -4,4 +4,5 @@ require_once '../vendor/autoload.php';
 use Ligne\FileMove;
 
 $fileMove = new FileMove('file','upload/');
-$fileMove->save();
+var_dump($fileMove->getFileType());
+//$fileMove->save();

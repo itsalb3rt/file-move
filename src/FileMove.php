@@ -11,12 +11,25 @@ class FileMove{
     private $extension;
     private $dirToSave;
     private $inputFileName;
+    private $fileType;
 
     function __construct(String $inputName,String $dirToSave){
         $this->fileName = $_FILES[$inputName]['name'];
+        $this->fileType = $_FILES[$inputName]['type'];
         $this->extension = $this->getExtensionFromName();
         $this->inputFileName = $inputName;
         $this->dirToSave = $dirToSave;
+    }
+
+    /**
+     * The mime type of the file, if the browser provided this information.
+     * An example would be "image/gif".
+     * This mime type is however not checked on the PHP side and therefore don't take its value for granted.
+     * @return mixed
+     */
+    public function getFileType()
+    {
+        return $this->fileType;
     }
 
     /**
